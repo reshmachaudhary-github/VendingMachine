@@ -5,13 +5,16 @@
 #include "VendingMachine.h"
 
 
-VendingMachine* VendingMachine::vendingInstance = NULL;
-
 void VendingMachine::initialise() {
     // TODO : initialises the available item quantity.
+    // Once can maintain inventory class for same. and get the details from it.
 }
 
 void VendingMachine::displayMenu() {
+
+    // this is hard coded menu 
+    // It can be read from any source and 
+    // display accordingly
     std::cout << "\n Menu \n";
     std::cout << "1. COFFEE     Rs 100 \n";
     std::cout << "2. TEA        Rs 50 \n";
@@ -59,7 +62,7 @@ void VendingMachine::processOrder(int choice) {
 
 int main()
 {
-    VendingMachine* CCD = VendingMachine::getVendingMachine();
+    VendingMachine* CCD = new VendingMachine();
     int choice = 0;
 
     do {

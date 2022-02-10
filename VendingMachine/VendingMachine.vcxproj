@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClInclude Include="Coffee.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="IVendingMachine.h" />
     <ClInclude Include="Milk.h" />
     <ClInclude Include="Tea.h" />
     <ClInclude Include="VendingMachine.h" />

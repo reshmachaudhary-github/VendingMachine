@@ -1,24 +1,16 @@
 #pragma once
 
+#include "IVendingMachine.h"
 #include "Item.h"
 #include "Coffee.h"
 #include "Tea.h"
 #include "Milk.h"
 
 
-class VendingMachine
+class VendingMachine : public IVendingMachine
 {
-private:
-	VendingMachine() {};
-	static VendingMachine* vendingInstance;
-	
 public:
-	static VendingMachine* getVendingMachine() {
-		if (NULL == vendingInstance) {
-			vendingInstance = new VendingMachine();
-		}
-		return vendingInstance;
-	}
+	VendingMachine() {};
 	void displayMenu();
 	void initialise();
 	void processOrder(int choice);
