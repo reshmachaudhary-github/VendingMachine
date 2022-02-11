@@ -4,7 +4,8 @@ enum Items
 {
 	COFFEE = 1,
 	TEA = 2,
-	MILK = 3
+	MILK = 3,
+	LAST_ITEM
 };
 
 class Coffee;

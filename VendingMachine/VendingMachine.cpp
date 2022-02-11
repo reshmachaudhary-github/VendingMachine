@@ -53,16 +53,16 @@ int main()
         CCD->displayMenu();
         std::cout << "\n Enter choice: ";
         std::cin >> choice;
-        if (choice == 4) {
+        if (choice == Items::LAST_ITEM) {
             break;
         }
-        if (choice <= 0 || choice >= 5)
+        if (choice <= 0 || choice > Items::LAST_ITEM )
         {
             std::cout << "Enter Valid choice !!!";
         }
         else {
             CCD->processOrder(choice);
         }
-    } while (choice != 4);
+    } while (choice != Items::LAST_ITEM);
 }
 
