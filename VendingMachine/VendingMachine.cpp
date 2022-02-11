@@ -7,7 +7,7 @@
 
 void VendingMachine::initialise() {
     // TODO : initialises the available item quantity.
-    // Once can maintain inventory class for same. and get the details from it.
+    // One can maintain inventory class for same and get the details from it.
 }
 
 void VendingMachine::displayMenu() {
@@ -36,11 +36,13 @@ void VendingMachine::processOrder(int choice) {
         }
     } while (amountpaid < currentOrder->item_Price);
 
+    // Calculate change value
     if (amountpaid >= currentOrder->item_Price) {
         std::cout << "Please collect change : Rs. " << amountpaid - currentOrder->item_Price << " \n";
         std::cout << "Order placed successfully";
     }
 
+    // Prepare selected menu item
     currentOrder->prepare();
 }
 

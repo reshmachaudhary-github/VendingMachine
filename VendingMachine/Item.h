@@ -8,10 +8,6 @@ enum Items
 	LAST_ITEM
 };
 
-class Coffee;
-class Tea;
-class Milk;
-
 class Item {
 public:
 	std::string item_Name;

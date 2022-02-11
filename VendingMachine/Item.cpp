@@ -5,6 +5,8 @@
 #include "Tea.h"
 #include "Milk.h"
 
+
+// Method to create required menu item
 Item* Item::createItem(int type) {
 	Item* currentOrder = NULL;
 

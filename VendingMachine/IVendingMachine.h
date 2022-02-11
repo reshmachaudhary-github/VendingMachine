@@ -1,4 +1,6 @@
 #pragma once
+
+// Interface for Vending machine
 class IVendingMachine
 {
 public:
