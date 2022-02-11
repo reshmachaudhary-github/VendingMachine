@@ -24,24 +24,8 @@ void VendingMachine::displayMenu() {
 
 void VendingMachine::processOrder(int choice) {
 
-    Item* currentOrder = NULL;
-
-    switch (choice) {
-        case Items::COFFEE: {
-            currentOrder = new Coffee(Items::COFFEE, "Coffee", 100);
-            break;
-        }
-
-        case Items::TEA: {
-            currentOrder = new Tea(Items::TEA, "Tea", 50);
-            break;
-        }
-
-        case Items::MILK: {
-            currentOrder = new Milk(Items::MILK, "Milk", 75);
-            break;
-        }
-    }
+    Item* currentOrder = Item::createItem(choice);
+  
     int amountpaid = 0;
     std::cout << "Please pay Rs." << currentOrder->item_Price << " \n";
     std::cout << "Amount paid: ";

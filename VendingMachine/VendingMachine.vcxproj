@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Coffee.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="Milk.cpp" />
     <ClCompile Include="Tea.cpp" />
     <ClCompile Include="VendingMachine.cpp" />

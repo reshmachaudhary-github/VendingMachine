@@ -1,12 +1,15 @@
 #pragma once
 
-
 enum Items
 {
 	COFFEE = 1,
 	TEA = 2,
 	MILK = 3
 };
+
+class Coffee;
+class Tea;
+class Milk;
 
 class Item {
 public:
@@ -21,4 +24,6 @@ public:
 	}
 
 	virtual void prepare() = 0;
+	static Item* createItem(int type);
 };
+
